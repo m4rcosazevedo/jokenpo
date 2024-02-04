@@ -8,7 +8,15 @@ module.exports = {
   },
   theme: {
     container: {
-      center: true
+      center: true,
+      padding: '1rem',
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '728px',
+        xl: '728px',
+        '2xl': '728px'
+      }
     },
     extend: {}
   },

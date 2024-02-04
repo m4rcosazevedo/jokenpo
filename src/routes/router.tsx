@@ -1,7 +1,9 @@
 import { Layout } from '@/components'
-import { Suspense } from 'react'
+import { Suspense, lazy } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+const Home = lazy(() => import('@/pages/home'))
 
 export default function Router() {
   return (
@@ -10,7 +12,7 @@ export default function Router() {
         <Suspense fallback={<p>Carregando....</p>}>
           <Routes>
             <Route element={<Layout />}>
-              <Route index element={<h1>Olá Mundo</h1>} />
+              <Route index element={<Home />} />
             </Route>
           </Routes>
         </Suspense>

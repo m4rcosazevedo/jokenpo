@@ -7,7 +7,7 @@ export default function Layout() {
       <section className="container">
         <Header />
 
-        <main>
+        <main className="max-w-xl m-auto">
           <Outlet />
         </main>
       </section>
