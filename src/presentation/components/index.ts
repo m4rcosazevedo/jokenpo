@@ -1,5 +1,0 @@
-export * from './footer'
-export * from './header'
-export * from './nav'
-export { default as QueryWrapper } from './query-wrapper/query-wrapper'
-export * from './ui'
