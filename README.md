@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Jogo de Jokenpo em React com TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do Jogo de Jokenpo desenvolvido em React com TypeScript! Este é um simples jogo de pedra, papel e tesoura criado como parte de um projeto educacional para praticar o uso do React e TypeScript.
 
-Currently, two official plugins are available:
+## Como jogar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone o repositório para sua máquina local:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname
-  }
-};
+```bash
+git clone git@github.com:m4rcosazevedo/jokenpo.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navegue até o diretório do projeto:
+
+```bash
+cd jokenpo
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o aplicativo:
+
+```bash
+npm run dev
+```
+
+O aplicativo será aberto em seu navegador padrão. Agora você pode jogar o Jokenpo!
+
+## Funcionalidades
+
+- Escolha entre pedra, papel e tesoura.
+- O computador fará uma escolha aleatória.
+- O resultado da rodada será exibido na tela.
+
+## Tecnologias Utilizadas
+
+- React
+- Typescript
+
+## Constribuições
+
+Contribuições são bem-vindas! Se você encontrar algum problema, ou tiver sugestões de melhorias, sinta-se à vontade para criar uma issuer ou enviar um pull request.
+
+## Lincença
+
+Este projeto é licenciado sob a licença MIT
+
+Divirta-se jogando Jokenpo! 🎮 ✊🖐️✌️
