@@ -6,7 +6,7 @@ interface Props {
   className?: string
   color?: 'blue' | 'yellow' | 'red'
   size?: 'small' | 'medium' | 'large'
-  onClick: () => void
+  onClick?: () => void
   active?: boolean
 }
 

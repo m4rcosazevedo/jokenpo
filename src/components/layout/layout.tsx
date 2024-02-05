@@ -1,5 +1,7 @@
+import { Suspense } from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
 import { Outlet } from 'react-router-dom'
-import { Header } from '..'
+import { Header, Title } from '..'
 
 export default function Layout() {
   return (
@@ -8,7 +10,11 @@ export default function Layout() {
         <Header />
 
         <main className="max-w-xl m-auto">
-          <Outlet />
+          <ErrorBoundary fallback={<Title>Ops... Ocorreu um erro e em breve vamos resolver</Title>}>
+            <Suspense fallback={<Title>Carregando...</Title>}>
+              <Outlet />
+            </Suspense>
+          </ErrorBoundary>
         </main>
       </section>
     </div>

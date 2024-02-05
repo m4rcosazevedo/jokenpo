@@ -2,7 +2,7 @@ import { create } from 'zustand'
 
 interface PlayerState {
   option: HandOption | null
-  setOption: (option: HandOption) => void
+  setOption: (option: HandOption | null) => void
 }
 
 export const usePlayer = create<PlayerState>(set => ({

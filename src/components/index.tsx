@@ -1,4 +1,8 @@
+export { default as Button } from './button/button'
 export { default as Circle } from './circle/circle'
 export { default as Countdown } from './countdown/countdown'
+export { default as Hand } from './hand/hand'
+export { default as HandsIcon } from './hands-icon/hands-icon'
 export { default as Header } from './header/header'
 export { default as Layout } from './layout/layout'
+export { default as Title } from './title/title'
